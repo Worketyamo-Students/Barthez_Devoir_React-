@@ -5,7 +5,7 @@ const Logo:React.FC = () => {
     return (
         <a 
             href='/#'
-            className="inline-block"
+            className="inline-block min-w-36"
         >
             <img src={logo} alt="logo society" className='w-full h-full'/>
         </a>

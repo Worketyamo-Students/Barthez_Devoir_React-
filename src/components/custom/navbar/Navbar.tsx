@@ -60,14 +60,14 @@ const Navbar: React.FC = () => {
 
         {/* Search Icon and CTA buttons */}
         <div className="flex items-center gap-1 sm:gap-3">
-            <button className="hidden sm:block p-1">
-                <AiOutlineSearch className="w-6 h-6 text-primary hover:scale-110" />
+            <button className="hidden sm:block p-2 rounded-full hover:bg-primary/10 transition-all duration-200">
+                <AiOutlineSearch className="w-6 h-6 text-primary" />
             </button>
 
             {/* CTA Buttons */}
             <div className="flex gap-0 sm:gap-2 items-center">
                 {/* Login */}
-                <button className="ctaBtn1 line">
+                <button className="ctaBtn1 hover:bg-primary/10">
                     Login
                 </button>
 
