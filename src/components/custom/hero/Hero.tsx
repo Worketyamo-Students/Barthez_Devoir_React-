@@ -5,7 +5,7 @@ import Img from './sub-compoments/Img'
 const Hero: React.FC = () => {
   return (
     <section className='container'>
-      <div className="flex justify-between items-center gap-4 px-16 py-8">
+      <div className="bg-linear from-bl from-primary to-transparent flex flex-col md:flex-row justify-center md:justify-between items-center gap-12 md:gap-4 md:px-16 py-8">
         <Content/>
         <Img/>
       </div>

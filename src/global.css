@@ -10,7 +10,7 @@
 
 .line::after{
     content: '';
-    @apply absolute bottom-2 left-1/2 w-[90%] h-1 bg-primary rounded-sm -translate-x-1/2 scale-0 duration-200
+    @apply absolute bottom-2 left-1/2 w-[90%] h-[.125rem] sm:h-1 bg-primary rounded-sm -translate-x-1/2 scale-0 duration-200
 }
 
 .line:hover::after{
@@ -18,11 +18,11 @@
 }
 
 .ctaBtn1{
-    @apply text-primary font-semibold font-source py-3 px-2 rounded
+    @apply text-primary font-semibold font-source py-3 px-1 md:px-2 rounded
 }
 
 .ctaBtn2{
-    @apply text-white bg-primary font-semibold font-source py-3 px-6 rounded hover:bg-primary/90 hover:text-white
+    @apply text-white bg-primary font-semibold font-source py-3 px-2 sm:px-4 md:px-6 rounded hover:bg-primary/90 hover:text-white
 }
 
 .bgImg{

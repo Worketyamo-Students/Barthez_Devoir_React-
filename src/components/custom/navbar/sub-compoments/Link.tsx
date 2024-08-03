@@ -9,7 +9,7 @@ const Link: React.FC<ILink> = (props: ILink) => {
   return (
     <>
         <a 
-            className='line font-openSans font-semibold text-gray px-2 py-3 hover:text-primary'
+            className='line text-sm md:text-base font-openSans font-semibold text-gray px-2 py-3 hover:text-primary'
             href={props.href}
         > 
             {props.name} 
