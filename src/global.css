@@ -24,3 +24,12 @@
 .ctaBtn2{
     @apply text-white bg-primary font-semibold font-source py-3 px-6 rounded hover:bg-primary/90 hover:text-white
 }
+
+.bgImg{
+    @apply relative z-10
+}
+
+.bgImg::before{
+    content: '';
+    @apply absolute -top-2 -left-2 bg-primary/20 
+}
