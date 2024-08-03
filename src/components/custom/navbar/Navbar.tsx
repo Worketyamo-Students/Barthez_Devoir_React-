@@ -2,6 +2,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import React from 'react'
 import Logo from './sub-compoments/Logo'
 import Link from './sub-compoments/Link';
+import Button from "./sub-compoments/Button";
 
 interface ILinksEle {
     name: string;
@@ -64,9 +65,7 @@ const Navbar: React.FC = () => {
                 </button>
 
                 {/* register */}
-                <button className="ctaBtn2">
-                    Register
-                </button>
+                <Button name="Register" />
             </div>
         </div>
     </div>
