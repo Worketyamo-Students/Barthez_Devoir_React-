@@ -5,32 +5,39 @@ import Link from './sub-compoments/Link';
 import Button from "./sub-compoments/Button";
 
 interface ILinksEle {
+    key: number;
     name: string;
     href: string;
 }
 
-const linksEle: ILinksEle[] = [
+const linksEle: ILinksEle[]= [
     {
+        "key": 1,
         'name': 'Home',
         'href': '/#'
     },
     {
+        "key": 2,
         'name': 'About Us',
         'href': '/#'
     },
     {
+        "key": 3,
         'name': 'Institutions',
         'href': '/#' 
     },
     {
+        "key": 4,
         'name': 'Library',
         'href': '/#'
     },
     {
+        "key": 5,
         'name': 'Projects',
         'href': '/#'
     },
     {
+        "key": 6,
         'name': 'Contact Us',
         'href': '/#'
     }
@@ -43,10 +50,10 @@ const Navbar: React.FC = () => {
         <Logo/>
 
         {/* NavLinks */}
-        <div className="hidden md:flex items-center gap-2 lg:gap-4">
+        <div className="hidden lg:flex items-center gap-1 sm:gap-2 lg:gap-4">
             {
                 linksEle.map((ele) => (
-                    <Link href={ele.href} name={ele.name} />
+                    <Link key={ele.key} href={ele.href} name={ele.name} />
                 ))
             }
         </div>

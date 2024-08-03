@@ -7,7 +7,7 @@ interface IBtn extends HTMLProps<HTMLButtonElement>{
 
 const GroupBtn:React.FC<IBtn> = (props: IBtn) => {
   return (
-    <button className='flex items-center gap-3 py-2 px-4 bg-[#EEDDDD] hover:bg-[#f8dede]  rounded'>
+    <button className='flex items-center w-full md:w-fit gap-3 py-2 px-4 bg-[#EEDDDD] hover:bg-[#f8dede]  rounded'>
         <div className="rounded-full bg-primary text-white p-3">
             {props.icon}
         </div>

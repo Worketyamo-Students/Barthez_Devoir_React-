@@ -25,11 +25,6 @@
     @apply text-white bg-primary font-semibold font-source py-3 px-2 sm:px-4 md:px-6 rounded hover:bg-primary/90 hover:text-white
 }
 
-.bgImg{
-    @apply relative z-10
-}
-
-.bgImg::before{
-    content: '';
-    @apply absolute -top-2 -left-2 bg-primary/20 
+.bgImageHero{
+    @apply absolute -top-4 left-6 md:left-1/4 -z-10 bg-primary/10 w-[96%] h-[70%] rounded-[3rem]
 }
